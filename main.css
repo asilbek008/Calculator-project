@@ -1,0 +1,105 @@
+.calculator {
+  max-width: 450px;
+  height: 760px;
+  background-color: burlywood;
+  padding: 35px 35px;
+  margin: 130px 480px;
+  border-radius: 18px;
+}
+
+.calculator div {
+  width: 100%;
+  display: inline-block;
+  justify-content: space-around;
+  align-items: center;
+  margin: 8px 12px 8px 12px;
+}
+
+input {
+  margin-left: 42.5px;
+  margin-top: 10px;
+  padding: 20px 10px;
+  border-radius: 12px;
+  font-size: 32px;
+}
+.buttons {
+  width: 440px;
+  height: 550px;
+  margin-left: 50px;
+  margin-top: 40px;
+  color: black;
+}
+
+.button-operator {
+  background-color: rgb(34, 218, 34);
+}
+button {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin-left: 2px;
+  margin-top: 10px;
+  font-size: 32px;
+  border-radius: 35px;
+  color: white;
+  background-color: rgb(2, 9, 17);
+}
+.button:hover {
+  border-radius: 20px;
+}
+.imp {
+  background-color: rgb(34, 218, 34);
+}
+.end {
+  background-color: green;
+  border-radius: 0px;
+}
+.end {
+  border-radius: 20%;
+  border: none;
+}
+.del {
+  background-color: rgb(34, 218, 34);
+}
+.operator {
+  background-color: rgba(16, 186, 16, 0.773);
+}
+
+/* ============= RESPONSIVE ============== */
+
+@media (max-width: 450px) {
+  body {
+    overflow-y: hidden;
+    background-color: black;
+  }
+  .calculator {
+    margin-top: 80px;
+    max-width: 375px;
+    height: 600px;
+    overflow: hidden;
+  }
+  .developer > p {
+    text-align: center;
+    color: white;
+  }
+  .buttons {
+    margin-left: -3px;
+  }
+  .button {
+    width: 75px;
+    height: 75px;
+  }
+  input {
+    margin-left: 5px;
+    width: 330px;
+    border-radius: 20px;
+  }
+}
+@media (max-width: 505px) {
+  .button {
+    width: 90px;
+  }
+  input {
+    width: 350px;
+  }
+}
